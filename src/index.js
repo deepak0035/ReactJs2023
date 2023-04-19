@@ -1,13 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import  "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-
-
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+import { UseContext, TryContext } from "./Components/UseContext/UseContext";
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 ReactDOM.render(
   <>
-  <App/>
+    <TryContext>
+      <App />
+    </TryContext>
   </>,
-  document.getElementById("root"));
-
+  document.getElementById("root")
+);

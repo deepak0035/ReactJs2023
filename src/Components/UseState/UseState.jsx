@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import React, { useState , useContext} from "react";
+import AppContext from "../UseContext/UseContext";
 
 const time = new Date();
 let cTime = time.toLocaleTimeString();
 
 const UseState = () => {
+  const userData = useContext(AppContext); 
   const [currTime, setCTime] = useState(cTime);
   const [formData, setformData] = useState({
     username: "",
@@ -61,7 +63,7 @@ const UseState = () => {
       </div>
       <div className="container">
         <h1>{`My Name is ${formData.username} and my email is ${formData.email}`}</h1>
-      </div>
+       </div>
     </>
   );
 };
