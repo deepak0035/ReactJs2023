@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useContext } from "react";
-import { UseContext, TryContext } from "../UseContext/UseContext";
 let rNum = 0;
 
 const UseEffects = () => {
@@ -12,7 +11,6 @@ const UseEffects = () => {
     rNum = Math.floor(Math.random() * 100);
     setranNum(rNum);
   };
-  const a = useContext(TryContext);
   return (
     <>
       <div className="d-flex justify-content-center">
