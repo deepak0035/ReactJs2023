@@ -16,6 +16,7 @@ const App = () => {
         <Navbar />
         <UseState />
         <UseEffects />
+        <UseReducer/>
       </UseContext.Provider>
     </>
   );
