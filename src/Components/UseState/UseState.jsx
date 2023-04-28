@@ -62,7 +62,7 @@ const UseState = () => {
           </div>
         </form>
       </div>
-      <div className="container">
+      <div className="container text-center">
         <h1>{`My Name is ${formData.username} and my email is ${formData.email}`}</h1>
         <h1>{`Name: ${updateData.name}`}</h1>
        </div>

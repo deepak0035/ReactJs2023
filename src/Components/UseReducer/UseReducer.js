@@ -16,10 +16,22 @@ function UseReducer() {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   return (
-    <div>
-      Count: {state.count}
-      <button onClick={() => dispatch({ type: "increment" })}>+</button>
-      <button onClick={() => dispatch({ type: "decrement" })}>-</button>
+    <div className="container text-center my-3">
+      <h1>Count: {state.count}</h1>
+      <div className="container">
+        <button
+          className="btn btn-primary mx-1"
+          onClick={() => dispatch({ type: "increment" })}
+        >
+          +
+        </button>
+        <button
+          className="btn btn-primary mx-1"
+          onClick={() => dispatch({ type: "decrement" })}
+        >
+          -
+        </button>
+      </div>
     </div>
   );
 }

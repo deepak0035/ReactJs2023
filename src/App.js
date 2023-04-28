@@ -2,6 +2,12 @@ import React from "react";
 import UseState from "./Components/UseState/UseState";
 import UseEffects from "./Components/UseEffects/UseEffects";
 import UseContext from "./Components/UseContext/UseContext";
+import UseReducer from "./Components/UseReducer/UseReducer";
+import UseRef from "./Components/UseRef/UseRef";
+import UseLayoutEffect from "./Components/UseLayoutEffect/UseLayoutEffect";
+import UseCallback from "./Components/UseCallBack/UseCallback";
+import UseMemo from "./Components/UseMemo/UseMemo";
+import UseImperativeParent from "./Components/UseImperative/UseImperativeParent";
 import Navbar from "./Components/Navbar";
 
 const App = () => {
@@ -16,7 +22,12 @@ const App = () => {
         <Navbar />
         <UseState />
         <UseEffects />
-        <UseReducer/>
+        <UseReducer />
+        <UseRef />
+        <UseLayoutEffect />
+        <UseMemo />
+        <UseCallback />
+        <UseImperativeParent />
       </UseContext.Provider>
     </>
   );
